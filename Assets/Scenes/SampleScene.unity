@@ -317,6 +317,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1733977783292518556, guid: 341abc1dc4c31ee45a448f95a184e8d7, type: 3}
   m_PrefabInstance: {fileID: 212259250}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &290858767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290858768}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290858768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290858767}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 2, z: 11.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 388462381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0.56, z: 11.75}
+  m_LocalPosition: {x: 8.2, y: 0.56, z: -7.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1269,6 +1300,9 @@ MonoBehaviour:
   OnSpacePressed:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1290907271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,6 +1317,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 68450822}
+  ball: {fileID: 1392772873}
+  pinCollection: {fileID: 388462381}
+  pinAnchor: {fileID: 290858768}
+  inputManager: {fileID: 1290907270}
 --- !u!1 &1378129721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1405,7 @@ GameObject:
   - component: {fileID: 1392772874}
   m_Layer: 7
   m_Name: BowlingBall
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2653,3 +2691,4 @@ SceneRoots:
   - {fileID: 911918808}
   - {fileID: 1856406935}
   - {fileID: 1378129724}
+  - {fileID: 290858768}
